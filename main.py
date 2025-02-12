@@ -8,7 +8,7 @@ def get_app(app_id):
 	app_data = {"app_id": app_id,"name:": "example"}
 
 	extra = request.args.get("extra")
-	if extra: app_data["extra"] = extra; return jsonift(user_data), 200
+	if extra: app_data["extra"] = extra; return jsonify(user_data), 200
 	
 
 def get_user(user_id):

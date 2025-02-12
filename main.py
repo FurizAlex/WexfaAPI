@@ -9,7 +9,6 @@ def get_app(app_id):
 
 	extra = request.args.get("extra")
 	if extra: app_data["extra"] = extra; return jsonify(app_data), 200
-	
 
 def get_user(user_id):
 	user_data = {"user_id": user_id,

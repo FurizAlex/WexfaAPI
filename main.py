@@ -4,6 +4,13 @@ app = Flask(_name_)
 
 @app.route("/get-user/<user_id>")
 
+def get_app(app_id):
+	app_data = {"app_id": app_id,"name:": "example"}
+
+	extra = request.args.get("extra")
+	if extra: app_data["extra"] = extra; return jsonift(user_data), 200
+	
+
 def get_user(user_id):
 	user_data = {"user_id": user_id,
 	"name": "John Doe",
